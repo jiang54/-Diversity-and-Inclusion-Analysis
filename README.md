@@ -96,14 +96,39 @@ The tabulation below shows the `HR Manager` table with its column names and thei
 
 Data Cleaning for the dataset was done in power query as follows:
 
-- Unnecessary columns were removed
-- Unnecessary rows were filtered 
+- Rows with missing values may carry important information and should not be indiscriminately removed
 - Each of the columns in the table were validated to have the correct data type 
 
 ---
 
-# Data Modeling
+# Dataset from the excel
 
-After the dataset was cleaned and transformed, it was ready to be modeled(using Power BI Desktop).
+After the dataset was cleaned and transformed, it was ready to be add measures(using Power BI Desktop).
 
 - The fact and dimension have been combined into one table and is shown in the data model below
+![Snipaste_2023-03-21_22-37-05](https://user-images.githubusercontent.com/24377958/226595183-3777883b-7f1e-42a2-8f40-505370728888.png)
+
+# Data Analysis (Add Necessary Measures)
+![image](https://user-images.githubusercontent.com/24377958/226596525-fd0cb486-4ae9-4201-a80b-4e155e7fafcd.png)
+`# of leaver = calculate(COUNTROWS('Pharma Group AG'),'Pharma Group AG'[FY20 leaver?] = "Yes")`
+`# of men = calculate(count('Pharma Group AG'[Gender]),'Pharma Group AG'[Gender] = "Male")`
+`# of women = calculate(count('Pharma Group AG'[Gender]),'Pharma Group AG'[Gender] = "Female")`
+`% of employees promoted(FY21) = [employees promoted in FY21]/[total rows]`
+`% of hires men = DIVIDE([hires men],[total rows])`
+`% of hires women = DIVIDE([hires women],[total rows])`
+`% of turnover = DIVIDE([FY20 leaver],[turnover])`
+`% of women promoted = [women promoted] / [employees promoted in FY21]`
+`employees promoted in FY21 = calculate(COUNTROWS('Pharma Group AG'),'Pharma Group AG'[Promotion in FY21?] = "Yes")`
+`hires men = CALCULATE([total rows],'Pharma Group AG'[Gender] = "Male")`
+`hires women = CALCULATE([total rows],'Pharma Group AG'[Gender] = "Female")`
+`total rows = COUNTROWS('Pharma Group AG')`
+`turnover = CALCULATE([total rows],'Pharma Group AG'[In base group for turnover FY20] = "Y")`
+`women promoted = CALCULATE([employees promoted in FY21],'Pharma Group AG'[Gender] = "Female")`
+
+
+# Data Visualization
+
+Data visualization for the dataset is done in 2 parts to ensure a clearer and more effective presentation of the data.
+![Snipaste_2023-03-21_22-26-10](https://user-images.githubusercontent.com/24377958/226597347-b8144a5e-443c-42cb-b74a-304f3c3e120d.png)
+![Snipaste_2023-03-21_22-26-26](https://user-images.githubusercontent.com/24377958/226597368-b27a4ba7-1d6a-4243-9867-de1711b73c02.png)
+
