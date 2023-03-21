@@ -12,10 +12,10 @@
 - [Data Sourcing](https://github.com/jiang54/-Diversity-and-Inclusion-Analysis#Data-Sourcing)
 - [Data Preparation](https://github.com/jiang54/-Diversity-and-Inclusion-Analysis#Data-Preparation)
 - [Data Modeling](https://github.com/jiang54/-Diversity-and-Inclusion-Analysis#Data-Modeling)
-- [Data Visualization](https://github.com/jiang54/-Diversity-and-Inclusion-Analysis#Data-Visualization)
 - [Data Analysis](https://github.com/jiang54/-Diversity-and-Inclusion-Analysis#Data-Analysis)
+- [Data Visualization](https://github.com/jiang54/-Diversity-and-Inclusion-Analysis#Data-Visualization)
 - [Insights](https://github.com/jiang54/-Diversity-and-Inclusion-Analysis#Insights)
-- [Shareable link](https://github.com/jiang54/-Diversity-and-Inclusion-Analysis#Shareable-Link)
+- [Virtual Case Experience Link](https://github.com/jiang54/-Diversity-and-Inclusion-Analysis#Virtual-Case-Experience-Link)
 
 
 ---
@@ -102,14 +102,16 @@ Data Cleaning for the dataset was done in power query as follows:
 
 ---
 
-# Dataset from the excel
+# Data Modeling
 
 After the dataset was cleaned and transformed, it was ready to be add measures(using Power BI Desktop).
 
 - The fact and dimension have been combined into one table and is shown in the data model below
-![Snipaste_2023-03-21_22-37-05](https://user-images.githubusercontent.com/24377958/226595183-3777883b-7f1e-42a2-8f40-505370728888.png)
+![image](https://user-images.githubusercontent.com/24377958/226610675-b04bf388-3d26-4e02-a731-af423f6e26b6.png)
 
-# Data Analysis (Add Necessary Measures)
+# Data Analysis
+Add Necessary Measures
+
 ![image](https://user-images.githubusercontent.com/24377958/226596525-fd0cb486-4ae9-4201-a80b-4e155e7fafcd.png)
 
 `# of leaver = calculate(COUNTROWS('Pharma Group AG'),'Pharma Group AG'[FY20 leaver?] = "Yes")`
