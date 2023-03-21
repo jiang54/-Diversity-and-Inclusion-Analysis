@@ -1,8 +1,9 @@
 # Pwc Switzerland Power BI virtual case experience - Diversity and Inclusion Analysis
 
-![Snipaste_2023-03-21_22-26-10](https://user-images.githubusercontent.com/24377958/226592829-58e7834c-53e4-4487-8c02-3a397db7b97f.png)
-![Snipaste_2023-03-21_22-26-26](https://user-images.githubusercontent.com/24377958/226592838-b170c744-e35d-406c-a6a1-148c2ec39878.png)
+
 ---
+![Snipaste_2023-03-21_22-26-10](https://user-images.githubusercontent.com/24377958/226601999-a4047f01-bc22-44d5-82d4-19034c14e3af.png)
+![Snipaste_2023-03-21_22-26-26](https://user-images.githubusercontent.com/24377958/226602048-b8eb3f86-503c-44e4-abad-d6e9cfb4ea9c.png)
 
 
 # Table of Contents
@@ -110,6 +111,7 @@ After the dataset was cleaned and transformed, it was ready to be add measures(u
 
 # Data Analysis (Add Necessary Measures)
 ![image](https://user-images.githubusercontent.com/24377958/226596525-fd0cb486-4ae9-4201-a80b-4e155e7fafcd.png)
+
 `# of leaver = calculate(COUNTROWS('Pharma Group AG'),'Pharma Group AG'[FY20 leaver?] = "Yes")`
 
 `# of men = calculate(count('Pharma Group AG'[Gender]),'Pharma Group AG'[Gender] = "Male")`
@@ -143,6 +145,23 @@ After the dataset was cleaned and transformed, it was ready to be add measures(u
 # Data Visualization
 
 Data visualization for the dataset is done in 2 parts to ensure a clearer and more effective presentation of the data.
-![Snipaste_2023-03-21_22-26-10](https://user-images.githubusercontent.com/24377958/226597347-b8144a5e-443c-42cb-b74a-304f3c3e120d.png)
-![Snipaste_2023-03-21_22-26-26](https://user-images.githubusercontent.com/24377958/226597368-b27a4ba7-1d6a-4243-9867-de1711b73c02.png)
+![Snipaste_2023-03-21_22-26-10](https://user-images.githubusercontent.com/24377958/226601999-a4047f01-bc22-44d5-82d4-19034c14e3af.png)
+![Snipaste_2023-03-21_22-26-26](https://user-images.githubusercontent.com/24377958/226602048-b8eb3f86-503c-44e4-abad-d6e9cfb4ea9c.png)
 
+# Insights
+
+Shown in [Data Visualization](https://github.com/jiang54/-Diversity-and-Inclusion-Analysis#Data-Visualization):
+
+
+- In most cases where male and female are balanced, it suggests that the company values gender diversity and is committed to creating an inclusive workplace environment.
+- The fact that female representation in Internal Services is half that of male representation (48 compared to 24) suggests that there may be a gender imbalance or bias in the hiring or promotion practices within that department. This could be an area for the company to focus on in order to promote greater gender diversity and equity within its workforce.
+- The significant difference in efficiency between women and men (37% compared to 63%) suggests a potential gender-based bias or inequality that the company should address. Steps such as offering equal opportunities for training and development, addressing potential biases in performance evaluations and promotions, and promoting a more inclusive workplace culture may help. The company may also need to conduct further analysis to identify the underlying factors contributing to these differences and develop targeted interventions to address them.
+---
+
+
+
+# Virtual Case Experience Link
+
+Virtual Case Experience: 
+
+[Virtual Case Experience Website](https://www.theforage.com/virtual-internships/prototype/a87GpgE6tiku7q3gu/PwC-Digital-Up-skilling-Virtual-Case-Experience?ref=38HZaFghHQngHaj8b)
