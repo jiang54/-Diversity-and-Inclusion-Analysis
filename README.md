@@ -111,19 +111,33 @@ After the dataset was cleaned and transformed, it was ready to be add measures(u
 # Data Analysis (Add Necessary Measures)
 ![image](https://user-images.githubusercontent.com/24377958/226596525-fd0cb486-4ae9-4201-a80b-4e155e7fafcd.png)
 `# of leaver = calculate(COUNTROWS('Pharma Group AG'),'Pharma Group AG'[FY20 leaver?] = "Yes")`
+
 `# of men = calculate(count('Pharma Group AG'[Gender]),'Pharma Group AG'[Gender] = "Male")`
+
 `# of women = calculate(count('Pharma Group AG'[Gender]),'Pharma Group AG'[Gender] = "Female")`
+
 `% of employees promoted(FY21) = [employees promoted in FY21]/[total rows]`
+
 `% of hires men = DIVIDE([hires men],[total rows])`
+
 `% of hires women = DIVIDE([hires women],[total rows])`
+
 `% of turnover = DIVIDE([FY20 leaver],[turnover])`
+
 `% of women promoted = [women promoted] / [employees promoted in FY21]`
+
 `employees promoted in FY21 = calculate(COUNTROWS('Pharma Group AG'),'Pharma Group AG'[Promotion in FY21?] = "Yes")`
+
 `hires men = CALCULATE([total rows],'Pharma Group AG'[Gender] = "Male")`
+
 `hires women = CALCULATE([total rows],'Pharma Group AG'[Gender] = "Female")`
+
 `total rows = COUNTROWS('Pharma Group AG')`
+
 `turnover = CALCULATE([total rows],'Pharma Group AG'[In base group for turnover FY20] = "Y")`
+
 `women promoted = CALCULATE([employees promoted in FY21],'Pharma Group AG'[Gender] = "Female")`
+
 
 
 # Data Visualization
